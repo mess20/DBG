@@ -1,0 +1,11 @@
+@keyframes transformColor
+    {
+    0% {color:tomato}
+    14% {color:orange}
+    28% {color:lemon}
+    42% {color:olive}
+    56% {color:grape}
+    70% {color:violet}
+    84% {color:fuchsia}
+    100% {color:tomato}
+}
