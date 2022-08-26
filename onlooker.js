@@ -6,7 +6,7 @@ link1 = document.createElement('link');
 link1.setAttribute('rel', 'stylesheet');
 link1.setAttribute('href', 'https://mess20.github.io/css/magic effect.css'); document.body.appendChild(link1);
 
-$("body").append(" <div id=\"tool-nav\" style=\"z-index:6001;display:flex;justify-content:space-around; position:fixed;bottom:1.6vh;left:50vw;width:50vw;height:2rem;\">     <btn id=\"btn-skill\" style=\"\"><i class=\"fa fa-magic\" ></i></btn>    <btn id=\"btn-map\" style=\"\"><i class=\"fa fa-map\" ></i></btn>    </div>                                <div id=\"skill-panel\" style=\"position:fixed;left:22vw;right:22vw;top:35vh;bottom:35vh;display:none;background:#3A393E;border-radius:15px;padding:20px;flex-direction:column;justify-content:space-around;padding-left:4rem;\">  <div id=\"m1\">Shock wave</div> <div id=\"m2\">Blue blaze</div> <div id=\"m3\">Darkblue curse</div> <div id=\"m4\">Ash fog</div> <div id=\"m5\">Explosion</div> <div id=\"m6\">Quick swords</div> <div id=\"m7\">Silvers lightning</div> <div id=\"m8\">Fleuret</div>  <div id=\"m9\">Sorry, you haven't got any skills.</div> <div id=\"m10\">Ball fire</div> <div id=\"m11\">Blood-sword</div> <div id=\"m12\">Ice arrow</div> <div id=\"m13\">Flame shield</div> <div id=\"m14\">Ice-breaking</div> <div id=\"m15\">Water hiding</div> </div>            <img id=\"map\" style=\"opacity:0.7;display:none;position:fixed;overflow-x:auto;left:0;bottom:20%;height:60%;width:auto;\" src=\"http://i.miaosu.bid/data/f_18363771.jpg\">      <div id=\"mask\" style=\"position:fixed;left:0;top:0;height:100vh;width:100vw;background:rgba(0,0,0,0.7);display:none;\"></div>   <div id=\"mask1\" style=\"position:fixed;right:-12vw;bottom:-25vh;height:80vh;width:80vw;background:transparent;display:block;z-index:-1000\"></div> ");  
+$("body").append(" <div id=\"tool-nav\" style=\"z-index:6001;display:flex;justify-content:space-around; position:fixed;bottom:1.6vh;left:50vw;width:50vw;height:2rem;\">    <btn id=\"btn-skill\" style=\"\"><i class=\"fa fa-magic\" ></i></btn>    <btn id=\"btn-map\" style=\"\"><i class=\"fa fa-map\" ></i></btn>    </div>                                <div id=\"skill-panel\" style=\"position:fixed;left:22vw;right:22vw;top:35vh;bottom:35vh;display:none;background:#3A393E;border-radius:15px;padding:20px;flex-direction:column;justify-content:space-around;padding-left:4rem;\">  <div id=\"m1\">Shock wave</div> <div id=\"m2\">Blue blaze</div> <div id=\"m3\">Darkblue curse</div> <div id=\"m4\">Ash fog</div> <div id=\"m5\">Explosion</div> <div id=\"m6\">Quick swords</div> <div id=\"m7\">Silvers lightning</div> <div id=\"m8\">Fleuret</div>  <div id=\"m9\">Sorry, you haven't got any skills.</div> <div id=\"m10\">Ball fire</div> <div id=\"m11\">Blood-sword</div> <div id=\"m12\">Ice arrow</div> <div id=\"m13\">Flame shield</div> <div id=\"m14\">Ice-breaking</div> <div id=\"m15\">Water hiding</div> </div>            <img id=\"map\" style=\"opacity:0.7;display:none;position:fixed;overflow-x:auto;left:0;bottom:20%;height:60%;width:auto;\" src=\"http://i.miaosu.bid/data/f_18363771.jpg\">      <div id=\"mask\" style=\"position:fixed;left:0;top:0;height:100vh;width:100vw;background:rgba(0,0,0,0.7);display:none;\"></div>   <div id=\"mask1\" style=\"position:fixed;right:-12vw;bottom:-25vh;height:80vh;width:80vw;background:transparent;display:block;z-index:-1000\"></div> ");  
 
 //初始化
 $("body").append("<textarea id=\"career\" value=\"\" style=\"z-index:6000;position:fixed;top:16.3vh;left:0vw;height:3.6rem;width:10rem;padding-top:0.8rem;text-align: center;background:#333;color:yellow;box-shadow:2px 2px 6px lightyellow;border:1px;border-radius:8px;transition:1s\" >wait…</textarea>  ");
@@ -51,11 +51,7 @@ $("[name='post']").submit();
 
 $("#career").val("【"+career+"】");
 
-//地图
-//$(".plot")[n1].css({"opacity":"1"});
 
-
-});
 //技能特效
 $("#btn-skill").bind("click",function(){
 $("#skill-panel").css({"display": "flex" });
