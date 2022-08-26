@@ -2,6 +2,8 @@
 link = document.createElement('link');
 link.setAttribute('rel', 'stylesheet');
 link.setAttribute('href', 'https://mess20.github.io/DBG/css/decoration.css'); document.body.appendChild(link);
+//写的太垃圾了，以后换一个思路，现在先放着
+
 
 function badgeWear(){
 var a = $("body").html();
