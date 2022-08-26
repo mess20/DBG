@@ -51,31 +51,6 @@ $("[name='post']").submit();
 
 $("#career").val("【"+career+"】");
 
-//游戏开始
-$("#btn-start").bind("click",function(){
-$("body").append("<textarea id=\"sum\" type=\"number\" value=\"\" style=\"z-index:6000;position:fixed;top:16.3vh;right:2vw;height:4rem;width:4rem;padding-top:1rem;text-align: center;background:#111;color:green;box-shadow:2px 2px 8px lightgreen;border:1px;border-radius:100%;transition:1s\" ></textarea>  ");
-var n0 = Math.round(Math.random()*(10-1)+1);
-$("#sum").val(n0);
-$("[name='message']").val("/me被传送到地点"+n0);
-$("[name='post']").submit();
-$("#btn-start").unbind();
-});
-//投掷骰子
-$("#btn-dice").bind("click",function(){
-var n0 = $("#sum").val();
-var n0 = n0.toString();
-var n0 = Number(n0);
-var n = Math.round(Math.random()*(12-1)+1);
-var n1 = n + n0;
-$("#sum").val(n1);
-$("#sum").css({"color":"lightgreen"});
-$("[name='message']").val("/me掷出了点数"+ n + "，到达地点" + n1);
-$("[name='post']").submit();
-
-setTimeout(function(){
-$("#sum").css({"color":"green"});
-},1000);
-
 //地图
 //$(".plot")[n1].css({"opacity":"1"});
 
@@ -121,14 +96,6 @@ $("#mask").css({"display": "none"});
 });
 
 });
-
-//奖惩机制
-/*
-var badge = <undefined>;
-alert("恭喜您获得徽章"+badge);
-$("[name='message']").val("/me获得了徽章" + badge);
-$("[name='post']").submit();
-*/
 
 //查看地图
 $("#btn-map").bind("click",function(){
