@@ -56,6 +56,7 @@ $('head')[0].appendChild(script);
 }
 
 function onlookerMode(){
+$("#tip").remove();
 $("body").append(" <div id=\"tip\" style=\"overflow:auto;position:fixed;left:22vw;right:22vw;top:15vh;bottom:15vh;display:block;background:#3A393E;border-radius:30px;padding:6% 5%;flex-direction:column;justify-content:space-around;z-index:10000;line-height:3.5rem\"> <span-title style=\'display:block;font-size:2rem;margin-bottom:2rem;\'><center>游戏进行期间，</center> </span-title><li>不得以任何形式透露游戏玩家游戏相关情报，不得协助他人作弊；</li><li>谈论游戏外的私人话题，请密聊。</li><li>讨论游戏相关的话题时，请一律小字。</li><br><span>希望您仔细阅读上述要求，关于以上要求，如有异议，您可以选择参与游戏或退出房间等。一旦点击“确定”，即表明您同意上述所有规定。</span>  <div style=\'margin-top:10%;margin-left:20%;margin-right:20%;display:flex;justify-content:space-around;\'><div style=\'color:lightyellow\' id=\'cancel-btn\'>取消</div><div style=\'color:lightyellow\' id=\'confirm-btn\'>确定</div></div> </div> ");
 $('#cancel-btn').bind('click',function(){
 location.reload();
